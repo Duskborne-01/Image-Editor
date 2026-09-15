@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Image Editor</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/theme.css" />
-  </head>
-  <body>
-    <main>
-      <section>
-        <div class="left">
-          <div class="top">
-            <label for="image-input" class="btn">
-              Choose Image
-              <input type="file" id="image-input" accept="image/*" hidden />
-            </label>
 
-            <button id="reset-btn" class="btn">Reset</button>
-            <button id="download-btn" class="btn">Download</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Editor</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/theme.css" />
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="left">
+        <div class="top">
+          <label for="image-input" class="btn">
+            Choose Image
+            <input type="file" id="image-input" accept="image/*" hidden />
+          </label>
+
+          <button id="reset-btn" class="btn">Reset</button>
+          <button id="download-btn" class="btn">Download</button>
+        </div>
+
+        <div class="bottom">
+          <div class="placeholder">
+            <i class="ri-image-line"></i>
+
+            <p>No Image Chosen</p>
           </div>
 
-          <div class="bottom">
-            <div class="placeholder">
-              <i class="ri-image-line"></i>
+          <canvas id="image-canvas"></canvas>
+        </div>
 
-              <p>No Image Chosen</p>
-            </div>
+        <div class="footer">
+          <div class="logo">About Me</div>
+          <div class="links">
+            <section class="contact">
+              <ul>
+                <span>Contact Me</span>
 
-            <canvas id="image-canvas"></canvas>
+                <li>
+                  Email:
+                  <a
+                    href="mailto:duskborne.dusky@gmail.com?text=Hi,%20i%20checkout%20your%20portfolio/website%20and%20i%20am%20interested%20to%20talk%20with%20you.">duskborne.dusky@gmail.com</a>
+                </li>
+                <li>Phone: <a href="tel:+919756460040">+91 9756460040</a></li>
+                <li>
+                  Whatsapp:
+                  <a href="https://wa.me/919756460040?text=Hi,%20I%20visited%20your%20website%20and%20want%20to%20connect."
+                    target="_blank">+91 9756460040</a>
+                </li>
+                <li>Time: Mon - Fri 2pm - 7pm</li>
+                <li>Support: Usually replies in 1 Hour.</li>
+              </ul>
+            </section>
+
+            <section class="social">
+              <ul>
+                <span>Links</span>
+
+                <li>
+                  <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                </li>
+                <li>
+                  <a href="https://github.com/duskborne-01" target="_blank"><i class="fa-brands fa-github"></i>
+                    GitHub</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i> Twitter</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </li>
+                <li>
+                  <a href="#" target="_blank"><i class="fa-brands fa-discord"></i> Discord</a>
+                </li>
+              </ul>
+            </section>
           </div>
-        </div>
-        <div class="right">
-          <h2>Filters</h2>
-          <div class="filters"></div>
 
-          <h2>Presets</h2>
-          <div class="presets"></div>
-        </div>
-      </section>
-    </main>
+          <hr>
 
-    <script src="./js/script.js"></script>
-  </body>
+          <div class="rights">
+            &copy; 2026 Copyright. All Rights Reserved. <br />
+            Made by <span>Duskborne</span> and <span>Arhaan</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="right">
+        <h2>Filters</h2>
+        <div class="filters"></div>
+
+        <h2>Presets</h2>
+        <div class="presets"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+
 </html>
